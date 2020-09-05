@@ -122,6 +122,11 @@ def create():
 @app.route("/depts/ele/<int:COMPLAINT_ID>",methods=['DELETE'])
 def delete_e(COMPLAINT_ID):
         Electricity.remove(Electricity[COMPLAINT_ID])
+        return jsonify({'result': True}) 
+
+@app.route("/depts/san/<int:COMPLAINT_ID>",methods=['DELETE'])
+def delete_s(COMPLAINT_ID):
+        Sanitary.remove(Sanitary[COMPLAINT_ID])
         return jsonify({'result': True})
         
 @app.route("/depts/rd/<int:COMPLAINT_ID>",methods=['DELETE'])
@@ -130,7 +135,7 @@ def delete_r(COMPLAINT_ID):
         return jsonify({'result': True})
         
 @app.route("/depts/wtr/<int:COMPLAINT_ID>",methods=['DELETE'])
-def delete(COMPLAINT_ID):
+def delete_w(COMPLAINT_ID):
         Water.remove(Water[COMPLAINT_ID])
         return jsonify({'result': True})
 
