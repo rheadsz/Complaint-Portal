@@ -96,10 +96,16 @@ def get_complaint_wtr(COMPLAINT_ID):
 			return jsonify(Water[COMPLAINT_ID]) 
 		else:
 			'Nothing Found', 404
+
 			
+      
 @app.route("/depts", methods=['POST'])
 def create():
-        new_complaint = {},
+        new_complaint = {'COMPLAINT_ID': 2,
+			'complainant': Alston Roche,
+			'address': "Nandigudda, Mangalore",
+			'Contact no.': 876543267
+			'description': "Unclean supply of water"},
         Water.append(dept)
         return jsonify({'Created': new_complaint})
 
