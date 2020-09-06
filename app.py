@@ -114,7 +114,7 @@ def create():
 			'address': "Nandigudda, Mangalore",
 			'Contact no.': 876543267
 			'description': "Unclean supply of water"},
-        Water.append(dept)
+        Water.append(dnew_complaint)
         return jsonify({'Created': new_complaint})
 
 
