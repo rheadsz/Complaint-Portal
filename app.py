@@ -71,7 +71,7 @@ def get_complaint(COMPLAINT_ID):
         {'Electricity Department': Electricity[COMPLAINT_ID]},
         {'Road Department': Road[COMPLAINT_ID]},
         {'Sanitary Department': Sanitary[COMPLAINT_ID]},
-        {'Water Department': Water[Complaint_ID]})
+        {'Water Department': Water[COMPLAINT_ID]})
         
 @app.route("/depts/ele/<int:COMPLAINT_ID>",methods={'GET'})
 def get_complaint_ele(COMPLAINT_ID):
@@ -114,7 +114,7 @@ def create():
 			'address': "Nandigudda, Mangalore",
 			'Contact no.': "876543267",
 			'description': "Unclean supply of water"},
-        Water.append(dnew_complaint)
+        Water.append(new_complaint)
         return jsonify({'Created': new_complaint})
 
 
