@@ -110,7 +110,7 @@ def get_complaint_wtr(COMPLAINT_ID):
 @app.route("/depts", methods=['POST'])
 def create():
         new_complaint = {'COMPLAINT_ID': 2,
-			'complainant': "Alston Roche",
+			'complainant': "Tanya Rego",
 			'address': "Nandigudda, Mangalore",
 			'Contact no.': "876543267",
 			'description': "Unclean supply of water"},
