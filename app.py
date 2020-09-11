@@ -26,7 +26,15 @@ Road = [{'COMPLAINT_ID': "0",
           'complainant': "Athul SK",
           'address': "Majila Jeppu,Near St.Josephs Seminary, Mangalore",
 	  'contact no.': "43267889087",
-          'description': "No proper footpath for the pedestrians"}]
+          'description': "No proper footpath for the pedestrians"},
+	
+	{'COMPLAINT_ID': "2",
+          'complainant': "Shanker Singh",
+          'address': "M.G Road, Mangalore",
+	  'contact no.': "1237865499",
+          'description': "broken roads"}
+       
+       ]
 
 Sanitary = [{'COMPLAINT_ID': "0",
           'complainant': "Manish shetty",
@@ -45,12 +53,26 @@ Water = [{'COMPLAINT_ID': "0",
           'address': "5th Cross, Urwa Mangalore",
 	  'contact no.': "6754327896",
           'description': "Bills for others' connection"},
+	 
+	{'COMPLAINT_ID': "1",
+          'complainant': "Raashid Ahmed",
+          'address': "8th Cross, Urwa Mangalore",
+	  'contact no.': "6754888896",
+          'description': "Bills for others' connection"},
 
-         {'COMPLAINT_ID': "1",
-          'complainant': "Meghana Shetty",
+         {'COMPLAINT_ID': "2",
+          'complainant': "Revisha Vas",
           'address': "Bejai New Road, Opp Bejai Market,Bejai, Mangalore",
-	  'contact no.': "7654327890",
-          'description': "Disconnection without notice and reason"}]
+	  'contact no.': "7654327856",
+          'description': "Disconnection without notice and reason"},
+	 
+         {'COMPLAINT_ID': "3",
+          'complainant': "Prinson Pereira",
+          'address': "Nanthoor, Mangalore",
+	  'contact no.': "7684431090",
+          'description': "Unclean supply of water"},
+	
+	]
 
 
 @app.route('/')
