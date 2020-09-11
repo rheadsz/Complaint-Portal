@@ -82,10 +82,10 @@ def index():
 @app.route("/depts", methods=['GET'])
 def get():
         return jsonify(
-        {'COMPLAINT REGARDING THE ELECTRICITY DEPARTMENT':Electricity},
-        {'COMPLAINT REGARDING THE ROAD DEPARTMENT': Road},
-        {'COMPLAINT REGARDING THE SANITARY DEPARTMENT': Sanitary},
-        {'COMPLAINT REGARDING THE WATER DEPARTMENT': Water},)
+        {'COMPLAINTS REGARDING THE ELECTRICITY DEPARTMENT':Electricity},
+        {'COMPLAINTS REGARDING THE ROAD DEPARTMENT': Road},
+        {'COMPLAINTS REGARDING THE SANITARY DEPARTMENT': Sanitary},
+        {'COMPLAINTS REGARDING THE WATER DEPARTMENT': Water},)
 
 @app.route("/depts/<int:COMPLAINT_ID>",methods={'GET'})
 def get_complaint(COMPLAINT_ID):
